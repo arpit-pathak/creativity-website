@@ -1,6 +1,6 @@
 # CREATIVITY Web Page
 
-## Project 14 🚀 Website's [Live Link](https://best-solutions.netlify.app/)🔗
+## Project 14 🚀 Website's [Live Link](https://crea-tivity.netlify.app/)🔗
 
 
 >by Arpit Pathak
