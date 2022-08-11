@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: .2px solid; */
+}
+
+:root {
+    --gray: #333333;
+    --light-gray: #828282;
+}
+
+body {
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.logo {
+    width: 120px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+
+.nav-line {
+    height: 2px;
+    width: 21rem;
+    background-color: #000;
+}
+
+.nav-item a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+.item-active a {
+    color: var(--gray)
+}
+
+.container {
+    width: 55vw;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 88vh;
+
+}
+
+/* creativity section  */
+.creativity-container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    position: relative;
+}
+
+.hero-heading {
+    font-size: 4.3rem;
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    line-height: .85;
+    font-family: "Merriweather", serif;
+}
+
+/* text stroke  */
+.hero-heading h1:first-child {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.hero-heading h1:last-child {
+    color: var(--gray);
+    margin-left: auto;
+
+}
+
+.ingredient {
+    font-size: 1.6rem;
+    color: var(--light-gray);
+    margin: 0 .7rem;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* hero button  */
+.hero-btn {
+    text-align: end;
+}
+
+.hero-btn button {
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    background-color: var(--gray);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* last section  */
+.last-section {
+    display: flex;
+    justify-content: space-around;
+    height: 48%;
+    position: relative;
+}
+
+/* work list  */
+.work-list {
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.work-item {
+    margin: 1.7rem 1rem;
+    color: var(--light-gray);
+}
+
+.work-item::before {
+    content: "·";
+    font-size: 100px;
+    vertical-align: middle;
+    line-height: 20px;
+    position: absolute;
+    left: -10px;
+    color: var(--light-gray);
+}
+
+.work-item:first-child::before,
+.work-item:first-child {
+    color: var(--gray)
+}
+/* vertical line through list bullet points  */
+.vertical-line {
+    width: 2px;
+    height: 280px;
+    background-color: var(--light-gray);
+    position: absolute;
+    top: 2.6rem;
+    left: 0rem;
+}
+
+/* image 2 with paragraph sub section */
+.img2-p {
+    width: 50%;
+    position: relative;
+}
+
+.double-quotes img {
+    width: 45px;
+}
+
+.img2-p p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--gray);
+    padding: .5rem 0;
+}
+
+.arrow img {
+    position: absolute;
+    bottom: 4rem;
+    right: -1rem;
+    width: 40px;
+}
+
+.img-2 img {
+    width: 100%;
+}
