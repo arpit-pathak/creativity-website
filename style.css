@@ -22,11 +22,18 @@ body {
 }
 
 .hero-img {
-    width: 35%;
+    width: 33%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 header {
@@ -34,6 +41,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    width: 90vw;
 }
 
 .logo {
@@ -42,13 +50,15 @@ header {
 
 .nav-items {
     display: flex;
-    gap: 3.5rem;
+    gap: 1rem;
     align-items: center;
+    justify-content: space-between;
+    width: 65%;
 }
 
 .nav-line {
     height: 2px;
-    width: 21rem;
+    width: 30%;
     background-color: #000;
 }
 
@@ -62,14 +72,17 @@ header {
     color: var(--gray)
 }
 
+.menu-icon{
+    width: 35px;
+    display: none;
+}
+
 .container {
-    width: 55vw;
+    width: 58vw;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 88vh;
-
 }
 
 /* creativity section  */
@@ -81,7 +94,7 @@ header {
 }
 
 .hero-heading {
-    font-size: 4.3rem;
+    font-size: 4rem;
     width: 66%;
     display: flex;
     flex-direction: column;
@@ -99,7 +112,6 @@ header {
 .hero-heading h1:last-child {
     color: var(--gray);
     margin-left: auto;
-
 }
 
 .ingredient {
@@ -121,6 +133,7 @@ header {
 /* hero button  */
 .hero-btn {
     text-align: end;
+    margin-top: 2.5rem;
 }
 
 .hero-btn button {
@@ -136,7 +149,6 @@ header {
 .last-section {
     display: flex;
     justify-content: space-around;
-    height: 48%;
     position: relative;
 }
 
@@ -194,11 +206,102 @@ header {
 
 .arrow img {
     position: absolute;
-    bottom: 4rem;
+    bottom: 6rem;
     right: -1rem;
     width: 40px;
+    height: 120px;
 }
 
 .img-2 img {
     width: 100%;
+}
+
+/* media queries  */
+
+@media screen and (max-width:1024px) {
+    .hero-img {
+        display: none;
+    }
+
+    .nav-items {
+        width: 80%;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    .nav-line {
+        width: 25%;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .nav-line {
+        display: none;
+    }
+
+    .hero-heading {
+        font-size: 3.5rem;
+    }
+
+    .hero-btn {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    body {
+        overflow: visible;
+    }
+
+    .nav-line {
+        display: none;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .creativity-container {
+        flex-direction: column;
+    }
+
+    .hero-heading {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .ingredient {
+        margin-top: 2rem;
+    }
+
+    .social-media-container {
+        position: unset;
+        flex-direction: row;
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    .hero-btn {
+        text-align: center;
+
+        margin: 1rem 0;
+    }
+
+    .arrow {
+        display: none;
+    }
+
 }
