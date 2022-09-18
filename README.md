@@ -25,7 +25,7 @@
 - 4.5 hours + 40 min to make website responsive
 ---
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-orange)
-![author](https://img.shields.io/badge/By-Arpit--Pathak-blue)
+![author](https://img.shields.io/badge/Author-Arpit--Pathak-blue)
 ![Live Project](https://img.shields.io/badge/Live--Project-14-green)
 
 ![Responsive-yes](https://img.shields.io/badge/Responsive-yes-ecff19)
